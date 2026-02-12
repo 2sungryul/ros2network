@@ -30,8 +30,11 @@ ros2 network configuration
 7. 윈도우즈 폴더 C:\Users\\<사용자id> 아래에 .wslconfig 이름의 텍스트 파일생성(확장자없어야함), 내용은 메모장열고 아래처럼 작성
 
 [WSL2]
+
 #networkingMode = mirrored
+
 networkingMode = bridged
+
 vmSwitch = external
 
 ![image](https://github.com/user-attachments/assets/81bddf53-3865-404c-b0a2-6700988e8177)
