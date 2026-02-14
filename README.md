@@ -29,13 +29,12 @@ ros2 network configuration
 
 7. 윈도우즈 폴더 C:\Users\\<사용자id> 아래에 .wslconfig 이름의 텍스트 파일생성(확장자없어야함), 내용은 메모장열고 아래처럼 작성
 
+```bash
 [WSL2]
-
 #networkingMode = mirrored
-
 networkingMode = bridged
-
 vmSwitch = external
+```
 
 ![image](https://github.com/user-attachments/assets/81bddf53-3865-404c-b0a2-6700988e8177)
 
@@ -43,7 +42,13 @@ vmSwitch = external
 
 브리지모드로 설정하면 모든 컴퓨터의 wsl2에서 ip주소가 동일하다. 서로다른 ip를 갖도록 하려면 mac 주소를 강제로 변경해주면 된다. 아래문장을 .wslconfig파일에 추가해주면됨
 
+```bash
+[WSL2]
+#networkingMode = mirrored
+networkingMode = bridged
+vmSwitch = external
 macAddress=00:11:22:33:44:55
+```
 
 8. wsl2-ubuntu20.04 실행하고 ifconfig 명령실행하면 192.168.0.x 형식의 ip주소가 할당되어야 함 -> wsl2가 무선공유기에 직접 연결되었음을 의미
 
@@ -53,8 +58,9 @@ macAddress=00:11:22:33:44:55
 
 mirrored networking mode 사용시에는 .wslconfig 파일의 내용을 다음처럼 수정
 
+```bash
 [WSL2]
-
 networkingMode=mirrored
+```
 
 윈도우즈 방화벽을 해제해야 함
