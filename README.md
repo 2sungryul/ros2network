@@ -60,8 +60,8 @@ macAddress=00:11:22:33:44:55
 
 # How to configure mirrored networking mode for WSL2
 
-mirrored networking modes는 wsl2가 windows와 네트워크를 공유하는 설정임 -> wsl2과 windows가 동일한 ip주소를 가짐
-mirrored networking mode 사용시에는 .wslconfig 파일의 내용을 다음처럼 수정 후 wsl2를 shutdown후 다시 실행해야함
+- mirrored networking modes는 wsl2가 windows와 네트워크를 공유하는 설정임 -> wsl2과 windows가 동일한 ip주소를 가짐
+- mirrored networking mode 사용시에는 .wslconfig 파일의 내용을 다음처럼 수정 후 wsl2를 shutdown후 다시 실행해야함
 
 ```bash
 [WSL2]
