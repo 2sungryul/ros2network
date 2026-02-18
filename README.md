@@ -49,6 +49,10 @@ networkingMode = bridged
 vmSwitch = external
 macAddress=00:11:22:33:44:55
 ```
+8. .wslconfig 파일내용을 수정하면 반드시 wsl2를 shutdown후 다시 실행해야함
+
+<img width="712" height="234" alt="image" src="https://github.com/user-attachments/assets/24b7f0bd-ead7-449a-9628-cae134b42ab8" />
+
 
 8. wsl2-ubuntu20.04 실행하고 ifconfig 명령실행하면 192.168.0.x 형식의 ip주소가 할당되어야 함 -> wsl2가 무선공유기에 직접 연결되었음을 의미
 
